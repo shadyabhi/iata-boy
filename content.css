@@ -1,0 +1,73 @@
+.airport-selection-popup {
+  position: absolute;
+  background: #1a1a2e;
+  color: #eee;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  z-index: 2147483647;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-width: 200px;
+  max-width: 360px;
+  user-select: none;
+}
+
+.airport-popup-handle {
+  padding: 4px 12px;
+  cursor: grab;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px 8px 0 0;
+}
+
+.airport-popup-handle:active {
+  cursor: grabbing;
+}
+
+.airport-popup-handle-dots {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+
+.airport-selection-item {
+  padding: 6px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.airport-selection-item:last-child {
+  border-bottom: none;
+}
+
+.airport-selection-popup .tooltip-code {
+  font-weight: 700;
+  color: #ffd166;
+  margin-right: 4px;
+}
+
+.airport-selection-popup .tooltip-name {
+  display: block;
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.tooltip-metro-badge {
+  font-size: 10px;
+  color: #888;
+  font-style: italic;
+  margin-left: 6px;
+}
+
+.airport-sub-item {
+  padding: 2px 12px 2px 20px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.airport-sub-prefix {
+  color: #555;
+  margin-right: 2px;
+}
