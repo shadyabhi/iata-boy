@@ -1,24 +1,25 @@
 {
   "manifest_version": 3,
   "name": "IATA-boy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Select text on any webpage to look up IATA airport codes with city and country info.",
-  "permissions": ["activeTab"],
+  "permissions": ["scripting", "storage"],
+  "optional_host_permissions": ["<all_urls>"],
   "action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
-    }
+    },
+    "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["content.css"],
-      "run_at": "document_idle"
-    }
-  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
   "web_accessible_resources": [
     {
       "resources": ["airports.json"],
